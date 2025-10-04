@@ -6,6 +6,7 @@
 
 # 🛡️💳 Payment System — Manual Testing Project
 
+
 <p align="center">
   <img src="https://img.shields.io/badge/Testing-Manual_Testing-1E90FF?style=for-the-badge&logo=checkmarx&logoColor=white" />
   <img src="https://img.shields.io/badge/Platform-Payment_System-FF6F00?style=for-the-badge&logo=paypal&logoColor=white" />
