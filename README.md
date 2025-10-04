@@ -1,6 +1,7 @@
+```markdown
 <!-- 💳 PAYMENT SYSTEM TESTING README -->
 <p align="center">
-  <img src="https://i.ibb.co/nwDh2K9/payment-testing-banner.png" alt="Payment System Testing Banner" width="100%" />
+  <img src="A_flat-style_digital_illustration_serves_as_the_he.png" alt="Payment System Manual Testing Banner" width="800"/>
 </p>
 
 # 🛡️💳 Payment System — Manual Testing Project
@@ -176,3 +177,4 @@ Each test case is based on **SRS requirements** and covers **functionality**, **
   <img src="https://img.shields.io/badge/SRS_Based_Testing-✓-8E44AD?style=for-the-badge&logo=markdown&logoColor=white" />
   <img src="https://img.shields.io/badge/QA_Excellence-Farhana_Islam-ff69b4?style=for-the-badge&logo=github&logoColor=white" />
 </p>
+```
