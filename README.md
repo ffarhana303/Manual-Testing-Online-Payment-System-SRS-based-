@@ -1,35 +1,48 @@
-```markdown
 <!-- 💳 PAYMENT SYSTEM TESTING README -->
-# 🛡️ Payment System — Manual Testing Project
+<p align="center">
+  <img src="https://i.ibb.co/nwDh2K9/payment-testing-banner.png" alt="Payment System Testing Banner" width="100%" />
+</p>
+
+# 🛡️💳 Payment System — Manual Testing Project
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Testing-Type-Manual-blue?style=flat-square" />
-  <img src="https://img.shields.io/badge/Platform-Payment_System-FF6F00?style=flat-square" />
-  <img src="https://img.shields.io/badge/Status-📊%20In_Progress-yellow?style=flat-square" />
-  <img src="https://img.shields.io/badge/QA%20Engineer-Farhana%20Islam-ff69b4?style=flat-square" />
+  <img src="https://img.shields.io/badge/Testing-Manual_Testing-1E90FF?style=for-the-badge&logo=checkmarx&logoColor=white" />
+  <img src="https://img.shields.io/badge/Platform-Payment_System-FF6F00?style=for-the-badge&logo=paypal&logoColor=white" />
+  <img src="https://img.shields.io/badge/Status-📊_In_Progress-F7DC6F?style=for-the-badge&logo=progress&logoColor=black" />
+  <img src="https://img.shields.io/badge/QA_Engineer-Farhana_Islam-ff69b4?style=for-the-badge&logo=githubcopilot&logoColor=white" />
 </p>
 
 ---
 
 ## 🧭 **Project Overview**
 
-This project documents **manual test cases** designed for the **Payment System** — ensuring that all critical modules such as authentication, transactions, and notifications function as expected.  
+This project documents **manual test cases** designed for the **Payment System** — ensuring that all critical modules such as authentication, transactions, merchant workflows, and notifications function as expected.  
 Each test case is based on **SRS requirements** and covers **functionality**, **security**, **usability**, and **reliability**.
 
-> 💡 Goal: Verify that the Payment System works securely and seamlessly for customers, merchants, and admins.
+> 💡 Goal: Verify that the Payment System works securely and seamlessly for customers, merchants, and admins while maintaining compliance with financial security standards.
+
+<p align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/2331/2331966.png" width="150" alt="Payment Security Icon" />
+</p>
 
 ---
 
 ## 🧩 **Module Details**
 
-| 🧱 Module | 📝 Description |
-|:-----------|:----------------|
-| 👤 **User Registration & Authentication** | Validate account creation, login, and authentication mechanisms. |
-| 👥 **Customer Features** | Verify customer dashboard, wallet, and payment history. |
-| 🏪 **Merchant Features** | Ensure merchants can accept, track, and manage transactions. |
-| 🛠️ **Admin Features** | Test admin controls, user management, and reporting. |
-| 💳 **Transaction Processing** | Confirm secure and accurate payment flows. |
-| 🔔 **Notifications & Alerts** | Validate timely alerts for transactions, failures, and updates. |
+| 🧱 Module | 📝 Description | 🔢 Test Cases |
+|:-----------|:----------------|:--------------|
+| 👤 **User Registration & Authentication** | Validate account creation, login, multi-factor authentication, and session handling. | 28 |
+| 👥 **Customer Features** | Verify customer dashboard, wallet balance, transaction history, and profile settings. | 27 |
+| 🏪 **Merchant Features** | Ensure merchants can accept payments, process refunds, view analytics, and manage settlements. | 19 |
+| 🛠️ **Admin Features** | Test admin controls, user/merchant management, fraud monitoring, and reporting. | 22 |
+| 💳 **Transaction Processing** | Confirm secure, real-time, and accurate payment flows (credit/debit cards, wallet, net banking). | 22 |
+| 🔔 **Notifications & Alerts** | Validate SMS, email, and push alerts for transactions, failures, and account changes. | 17 |
+
+📊 **Total Test Cases = 135**
+
+<p align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/483/483356.png" width="120" alt="Checklist Icon" />
+</p>
 
 ---
 
@@ -45,14 +58,18 @@ Each test case is based on **SRS requirements** and covers **functionality**, **
 
 | Field | Details |
 |--------|----------|
-| 🆔 **Test ID** | TC_PAY_001 |
-| 🧩 **Module** | Transaction Processing |
-| 🎯 **Scenario** | Verify successful payment with valid card details |
-| ⚙️ **Precondition** | User must have a valid account and card linked |
-| 🪜 **Test Steps** | 1️⃣ Open checkout page<br>2️⃣ Enter valid card details<br>3️⃣ Click "Pay Now" |
-| ✅ **Expected Result** | Payment is processed and a confirmation message is displayed |
+| 🆔 **Test ID** | TC_PAY_023 |
+| 🧩 **Module** | User Registration & Authentication |
+| 🎯 **Scenario** | Verify login with OTP (Two-Factor Authentication) |
+| ⚙️ **Precondition** | User account with mobile number is registered |
+| 🪜 **Test Steps** | 1️⃣ Enter username & password<br>2️⃣ System sends OTP to registered phone<br>3️⃣ Enter OTP and click "Verify" |
+| ✅ **Expected Result** | User is authenticated successfully and redirected to dashboard |
 | 🧪 **Actual Result** | Pending execution |
 | 🟢 **Status** | Not Executed |
+
+<p align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/4379/4379646.png" width="140" alt="Test Case Icon" />
+</p>
 
 ---
 
@@ -71,20 +88,23 @@ Each test case is based on **SRS requirements** and covers **functionality**, **
 ## 🧪 **Testing Approach**
 
 ### 1️⃣ **Test Design**
-- Based on **SRS requirements & end-to-end user journey**.  
-- Covers **positive**, **negative**, **boundary**, and **security** scenarios.
+- Based on **SRS requirements & end-to-end workflows**.  
+- Covers **positive**, **negative**, **boundary**, **security**, and **usability** scenarios.  
+- Includes **equivalence partitioning** and **boundary value analysis** techniques.
 
 ### 2️⃣ **Test Execution**
-- 🧭 **Environment:** Web + Mobile (UI Testing)  
-- 💻 **Platforms:** Windows 10, Android 13  
-- 🌐 **Browsers Tested:** Chrome, Firefox, Edge  
+- 🧭 **Environment:** Web + Mobile (UI Testing).  
+- 💻 **Platforms:** Windows 10, Android 13, iOS 17.  
+- 🌐 **Browsers Tested:** Chrome, Firefox, Edge, Safari.  
+- 📱 **Devices Tested:** Desktop, Tablet, Android & iPhone.
 
 ### 3️⃣ **Defect Tracking**
 - 🪲 Issues logged in **Excel/JIRA** with:  
-  - Steps to Reproduce  
-  - Expected vs Actual  
-  - Severity (Critical, Major, Minor)  
-  - Screenshot Evidence  
+  - Steps to Reproduce.  
+  - Expected vs Actual Behavior.  
+  - Severity Levels (Critical, Major, Minor, Trivial).  
+  - Screenshot/Video Evidence.  
+  - Assigned Developer & Fix Status.  
 
 ---
 
@@ -94,40 +114,42 @@ Each test case is based on **SRS requirements** and covers **functionality**, **
 |:---|:-------------|:------------------|:-----------|
 | TC_PAY_001 | Successful payment with valid card | Payment processed successfully | 🟡 Pending |
 | TC_PAY_002 | Invalid card details | Error message displayed | 🟡 Pending |
-| TC_PAY_003 | Insufficient funds | Transaction declined with proper message | 🟡 Pending |
-| TC_PAY_004 | User login with wrong password | “Invalid credentials” message displayed | 🟡 Pending |
-| TC_PAY_005 | Merchant refund process | Refund reflected in customer account | 🟡 Pending |
-| TC_PAY_006 | Admin suspends account | User access restricted | 🟡 Pending |
-| TC_PAY_007 | Notification on failed payment | User notified immediately | 🟡 Pending |
+| TC_PAY_010 | Refund processed by merchant | Refund reflected in customer wallet | 🟡 Pending |
+| TC_PAY_015 | Admin disables suspicious merchant | Merchant access restricted immediately | 🟡 Pending |
+| TC_PAY_020 | OTP expires after 60 seconds | User receives timeout error | 🟡 Pending |
+| TC_PAY_028 | Notification on payment failure | SMS/Email sent to user instantly | 🟡 Pending |
 
 ---
 
 ## 🧭 **Execution Steps**
 
-1. 📥 **Download** → `Payment_System_TestCases.xlsx`  
-2. 📑 **Review** → Each test case and test data  
-3. 🧪 **Execute** → Perform steps on Payment System UI  
-4. 🐞 **Log Defects** → If Expected ≠ Actual  
-5. 📊 **Update Results** → Pass / Fail / Blocked  
+1. 📥 **Download** → `Payment_System_TestCases.xlsx`.  
+2. 📑 **Review** → Each test case, preconditions, and test data.  
+3. 🧪 **Execute** → Perform test steps on Payment System UI.  
+4. 🐞 **Log Defects** → If Expected ≠ Actual.  
+5. 📊 **Update Results** → Pass / Fail / Blocked in Excel/JIRA.  
+6. 📁 **Attach Evidence** → Screenshots or logs of test results.  
 
 ---
 
 ## 🧱 **QA Best Practices**
 
-✅ Cover **positive, negative, and security** paths.  
-✅ Include **realistic test data examples**.  
-✅ Execute across **multiple browsers & devices**.  
-✅ Log **screenshots & evidence** for all defects.  
-✅ Maintain **clear and consistent test IDs**.  
+✅ Cover **functional, negative, and security** flows.  
+✅ Use **realistic test data** (valid, invalid, boundary).  
+✅ Ensure **cross-browser & device coverage**.  
+✅ Log **screenshots & console logs** for all failures.  
+✅ Maintain **consistent test IDs & traceability matrix**.  
+✅ Ensure **compliance testing** (e.g., PCI-DSS for payments).  
 
 ---
 
 ## 🚀 **Future Enhancements**
 
-- 🤖 Automate payment test flow using **Selenium + Python/JavaScript**.  
-- 📈 Integrate with **TestRail / Zephyr** for test reporting.  
-- ☁️ Add **API-level test coverage** for transaction endpoints.  
-- 💾 Generate **HTML/PDF reports** from Excel execution results.  
+- 🤖 Automate payment workflows using **Selenium + Python/JavaScript**.  
+- 🧪 Add **API Testing** for payment gateway endpoints with Postman/Newman.  
+- 📈 Integrate with **TestRail / Zephyr** for test management & reporting.  
+- ☁️ Add **performance testing** (LoadRunner / JMeter) for payment throughput.  
+- 💾 Generate **CI/CD integrated HTML/PDF test reports**.  
 
 ---
 
@@ -136,7 +158,7 @@ Each test case is based on **SRS requirements** and covers **functionality**, **
 | 🧠 Role | 👤 Name |
 |----------|-----------|
 | 🧪 **QA Lead** | Farhana Islam |
-| 💼 **Test Engineer** | [Farhana] |
+| 💼 **Test Engineer** | [Your Name Here] |
 | 🗓️ **Last Updated** | October 2025 |
 | 🧾 **Version** | v1.0 |
 
@@ -149,9 +171,8 @@ Each test case is based on **SRS requirements** and covers **functionality**, **
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Manual_Testing-In_Progress-yellow?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Payment_System-Modules_Tested-FF6F00?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/SRS_Based_Testing-✓-purple?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/QA_Excellence-Farhana_Islam-ff69b4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Manual_Testing-In_Progress-1E90FF?style=for-the-badge&logo=gitbook&logoColor=white" />
+  <img src="https://img.shields.io/badge/Payment_System-Modules_Tested-FF6F00?style=for-the-badge&logo=googlepay&logoColor=white" />
+  <img src="https://img.shields.io/badge/SRS_Based_Testing-✓-8E44AD?style=for-the-badge&logo=markdown&logoColor=white" />
+  <img src="https://img.shields.io/badge/QA_Excellence-Farhana_Islam-ff69b4?style=for-the-badge&logo=github&logoColor=white" />
 </p>
-```
